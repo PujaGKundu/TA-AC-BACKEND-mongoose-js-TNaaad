@@ -7,7 +7,7 @@ var userSchema = new Schema(
     email: { type: String, lowercase: true },
     age: { type: Number, default: 0 },
     password: { type: String, minlength: 5 },
-    createdAt: { type: Date, default: Date.now },
+    createdAt: { type: Date, default: new Date() },
     favourites: [String],
   },
   { timestamps: true }
